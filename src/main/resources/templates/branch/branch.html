@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>SB Network</title>
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<table class="table table-responsive table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Branch Name</th>
+						<th>Branch Address</th>
+						<th>Branch Contact Number</th>
+						<th>Manager Id</th>
+						<th>No of Employees</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="branch : ${listBranch}">
+						<td th:text="${branch.name}"></td>
+						<td th:text="${branch.address}"></td>
+						<td th:text="${branch.contact_no}"></td>
+						<td th:text="${branch.manager_id}"></td>
+						<td th:text="${branch.no_of_employees}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+</body>
+</html>
