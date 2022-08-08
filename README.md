@@ -1,2 +1,2 @@
 # spring-boot
-spring boot projects
+spring boot web project with Bootstrap, MySQL, Thymeleaf, JPA
